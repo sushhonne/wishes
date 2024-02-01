@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary-2</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200;0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;0,8..60,900;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700;1,8..60,800;1,8..60,900&display=swap");
+      :root {
+        --content-color: #fff;
+        --primary-color: #f8da5b;
+        --secondary-color: #4a4957;
+      }
+      .font-serif {
+        font-family: "Source Serif 4", serif;
+      }
+      .font-open {
+        font-family: "Open Sans", sans-serif;
+      }
+      .font-oleo {
+        font-family: "Oleo Script", system-ui;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: screen;
+        height: screen;
+      }
+      .card {
+        background-color: var(--secondary-color);
+        width: 595px;
+        height: 842px;
+        padding: 24px;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-border-out {
+        border: 3px solid var(--primary-color);
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-border-in {
+        border: 3px solid var(--primary-color);
+        z-index: 1;
+        height: auto;
+        width: auto;
+        height: 100%;
+        width: 100%;
+      }
+      .logo {
+        padding: 20px;
+      }
+      .info {
+        padding: 100px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .name {
+        color: var(--content-color);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 10px 0px;
+      }
+      .wish {
+        color: var(--content-color);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 10px;
+      }
+      .content {
+        text-align: center;
+        color: var(--content-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        padding: 20px 0px;
+      }
+      .date {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 40px;
+        color: var(--content-color);
+      }
+      .date-display {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        color: var(--primary-color);
+      }
+      .cong {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 77px;
+        text-align: left;
+        color: var(--primary-color);
+      }
+      .on {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 350;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--primary-color);
+      }
+      .wa {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 55px;
+        text-align: center;
+        color: var(--primary-color);
+      }
+      .present {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        padding-top: 20px;
+        color: var(--content-color);
+      }
+      .name {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+        padding: 20px 28px 3px 28px;
+        border-bottom: 2px dashed #6E6D79;
+
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="card">
+        <div class="card-border-out">
+          <div class="card-border-in">
+            <div class="logo">
+              <img src="./images/white_logo.svg" alt="Logo" />
+            </div>
+            <div class="info font-open">
+              <span class="cong font-oleo">Congratulations</span>
+              <span class="on font-open">On Your</span>
+              <span class="wa font-oleo">Work Anniversary</span>
+              <span class="present">This Certificate is Presented to</span>
+              <span class="name">Mohammed Rohan</span>
+
+
+              <span class="content ">
+                Le Lorem Ipsum est simplement du faux texte employé dans la
+                composition et la mise en page avant impression. Le Lorem Ipsum
+                est le faux texte standard de l'imprimerie depuis les années ,
+                quand un imprimeur anonyme assembla
+              </span>
+              <span class="date">DATE</span>
+              <span class="date-display">Jan 20,2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
