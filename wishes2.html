@@ -123,8 +123,18 @@
         line-height: normal;
       }
       .you {
+        position: flex;
         position: relative;
-        z-index: 0;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 213px;
+      }
+      .svg{
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
       }
       .to-you {
         position: absolute;
@@ -160,6 +170,7 @@
                 height="40"
                 viewBox="0 0 213 40"
                 fill="none"
+                class="svg"
               >
                 <path
                   d="M0.5 0H212.5L190 19.2157L212.5 40H0.5L29.5 19.2157L0.5 0Z"
